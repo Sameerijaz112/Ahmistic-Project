@@ -674,6 +674,8 @@ banner
   font-size: 52px;
   font-weight: 700;
   margin-bottom: 20px;
+  padding: 7px;
+    border-radius: 10px;
 }
 
 .main-banner .left-content .inner-content span {

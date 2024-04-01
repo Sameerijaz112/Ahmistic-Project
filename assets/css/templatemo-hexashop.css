@@ -1370,8 +1370,9 @@ Social
   margin-top: 60px;
   padding-left: 15px;
   padding-right: 15px;
+  display: flex;
+  justify-content: space-between;
 }
-
 #social .thumb {
   position: relative;
 }
@@ -1915,7 +1916,7 @@ About Us Page
 */
 
 .about-page-heading {
-  margin-top: 160px;
+  margin-top: 99px;
   margin-bottom: 30px;
   background-image: url(../images/about-us-page-heading.jpg);
   background-position: center center;

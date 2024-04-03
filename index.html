@@ -14,7 +14,7 @@
 
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
@@ -107,8 +107,8 @@ https://templatemo.com/tm-571-hexashop
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="right-content ">
+                <div class="col-lg-6 ">
+                    <div class="right-content fade-up" data-aos="fade-up"> 
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="right-first-image">
@@ -201,7 +201,7 @@ https://templatemo.com/tm-571-hexashop
     <!-- ***** Main Banner Area End ***** -->
 
     <!-- ***** Men Area Starts ***** -->
-    <section class="section animate__animated animate__bounce" id="men">
+    <section class="section fade-down" id="men" data-aos="fade-right">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -318,7 +318,7 @@ https://templatemo.com/tm-571-hexashop
     <!-- ***** Men Area Ends ***** -->
 
     <!-- ***** Women Area Starts ***** -->
-    <section class="section" id="women">
+    <section class="section" id="women" data-aos="fade-left">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -435,7 +435,7 @@ https://templatemo.com/tm-571-hexashop
     <!-- ***** Women Area Ends ***** -->
 
     <!-- ***** Kids Area Starts ***** -->
-    <section class="section" id="kids">
+    <section class="section" id="kids" data-aos="fade-up">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -555,7 +555,7 @@ https://templatemo.com/tm-571-hexashop
     <section class="section" id="explore">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6"  data-aos="fade-up-right">
                     <div class="left-content">
                         <h2>Company Details</h2>
                         <span>We AHMISTICIMPORTS Take Pleasure To Introduce Ourselves As An Exporter And Manufacturer Of
@@ -578,7 +578,7 @@ https://templatemo.com/tm-571-hexashop
                         </div> -->
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-up-left">
                     <div class="right-content">
                         <img src="assets/images/logo1.JPG" alt="">
                     </div>
@@ -586,7 +586,7 @@ https://templatemo.com/tm-571-hexashop
             </div>
         </div>
     </section>
-    <section class="section" id="explore">
+    <section class="section" id="explore" data-aos="zoom-in">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -643,7 +643,7 @@ https://templatemo.com/tm-571-hexashop
     <!-- ***** Explore Area Ends ***** -->
 
     <!-- ***** Social Area Starts ***** -->
-    <section class="section" id="social">
+    <section class="section" id="social" data-aos="zoom-out">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -858,9 +858,14 @@ https://templatemo.com/tm-571-hexashop
 
             });
         });
-
+        AOS.init({
+  duration: 1200,
+})
     </script>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

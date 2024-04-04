@@ -147,8 +147,8 @@ https://templatemo.com/tm-571-hexashop
                             </div>
                             <div class="col-lg-12">
                                 <fieldset>
-                                    <button type="submit" id="form-submit" class="main-dark-button"><i
-                                            class="fa fa-paper-plane"></i></button>
+                                    <button type="submit" onclick="popup()"><i class="fa fa-paper-plane"></i></button>
+                                </fieldset>
                             </div>
                         </div>
                     </form>
@@ -316,30 +316,9 @@ https://templatemo.com/tm-571-hexashop
 
     </script>
     <script>
-        document.getElementById('contact').addEventListener('submit', function (event) {
-            event.preventDefault(); // Prevent the form from submitting normally
-
-            // Your EmailJS parameters
-            const serviceID = 'YOUR_SERVICE_ID'; // Your EmailJS service ID
-            const templateID = 'YOUR_TEMPLATE_ID'; // Your EmailJS template ID
-
-            // Collect form data
-            const formData = new FormData(this);
-
-            // Add recipient email address
-            formData.append('to_email', 'sameerejaz970@gmail.com');
-
-            // Send the email
-            emailjs.sendForm(serviceID, templateID, formData)
-                .then(function (response) {
-                    console.log('Email sent successfully:', response);
-                    // Optionally, you can show a success message or redirect the user
-                }, function (error) {
-                    console.error('Email sending failed:', error);
-                    // Optionally, you can show an error message
-                });
-        });
-
+         function popup() {
+        window.alert('Thanks For Contact');
+    }
     </script>
 
 </body>

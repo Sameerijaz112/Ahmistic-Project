@@ -14,6 +14,7 @@
     <link rel="icon" sizes="32x32" href="/assets//images/logo1.JPG" />
 
     <!-- Additional CSS Files -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
@@ -99,7 +100,7 @@ https://templatemo.com/tm-571-hexashop
     <!-- ***** Main Banner Area End ***** -->
 
     <!-- ***** About Area Starts ***** -->
-    <div class="about-us" id="men">
+    <div class="about-us" id="men" data-aos="fade-up">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -145,7 +146,7 @@ https://templatemo.com/tm-571-hexashop
     <!-- ***** Our Team Area Ends ***** -->
 
     <!-- ***** Services Area Starts ***** -->
-    <section class="our-services">
+    <section class="our-services" data-aos="fade-up">
         <div class="container">
             <div class="row" id="women">
                 <div class="col-lg-12">
@@ -378,7 +379,13 @@ https://templatemo.com/tm-571-hexashop
         });
 
     </script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200
+        });
+    
+    </script>
 </body>
 
 </html>
